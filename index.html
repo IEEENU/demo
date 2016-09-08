@@ -1017,7 +1017,7 @@
 					  };
 
 	  map = new google.maps.Map(document.getElementById('map-canvas-holder'),mapOptions);
-	  marker = new google.maps.Marker({position: egglabs, raiseOnDrag: false, icon: image, map: map, draggable: false,  title: 'IEEE SB NU'}); 
+	  marker = new google.maps.Marker({position: egglabs, raiseOnDrag: false, map: map, draggable: false,  title: 'IEEE SB NU'}); 
 	  google.maps.event.addListener(map, 'zoom_changed', function() {
 	   var center = map.getCenter();
 	   google.maps.event.trigger(map, 'resize');
