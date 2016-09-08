@@ -840,12 +840,10 @@
 	 var latitude;
 	 var longitude;
 	 function inicializemap(){
-	   latitude = 41.3349509; 
-	   longitude = 19.8217028;
+	   latitude = 23.1284081; 
+	   longitude = 72.5408276;
 
 	  var egglabs = new google.maps.LatLng(latitude, longitude);
-	  var egglabs1 = new google.maps.LatLng(43.0630171, 89.2296082);
-	  var egglabs2 = new google.maps.LatLng(13.0630171, 80.2296082 );
 
 
 	  var image = new google.maps.MarkerImage('images/marker.png', new google.maps.Size(84,56), new google.maps.Point(0,0), new google.maps.Point(42,56));
@@ -1019,9 +1017,7 @@
 					  };
 
 	  map = new google.maps.Map(document.getElementById('map-canvas-holder'),mapOptions);
-	  marker = new google.maps.Marker({position: egglabs, raiseOnDrag: false, icon: image, map: map, draggable: false,  title: 'ATIS1'}); 
-	  marker = new google.maps.Marker({position: egglabs1, raiseOnDrag: false, icon: image, map: map, draggable: false,  title: 'ATIS2'}); 
-	  marker = new google.maps.Marker({position: egglabs2, raiseOnDrag: false, icon: image, map: map, draggable: false,  title: 'ATIS3'}); 
+	  marker = new google.maps.Marker({position: egglabs, raiseOnDrag: false, icon: image, map: map, draggable: false,  title: 'IEEE SB NU'}); 
 	  google.maps.event.addListener(map, 'zoom_changed', function() {
 	   var center = map.getCenter();
 	   google.maps.event.trigger(map, 'resize');
